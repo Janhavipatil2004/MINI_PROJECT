@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Plant Disease Recognition System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 30px;
+        }
+
+        body {
+            background-image: url("https://ccreadysites.cyberchimps.com/nature-leaf/wp-content/uploads/sites/199/2022/05/nature-leaf-bg-img.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #254d2f;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            background-color: rgb(72, 103, 54);
+            padding: 0.1px;
+            color: rgb(245, 255, 244);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        nav .brand {
+            margin-left: 15px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            margin-right: 15px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: rgb(214, 236, 224);
+            text-decoration: none;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 80px; /* Adjusted for fixed navbar */
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            padding: 50px;
+            max-width: 1200px;
+            width: 100%;
+            background:transparent;
+            margin: 20px 0;
+            border-radius: 15px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .section:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+
+        .section1:nth-child(1) {
+            flex-direction: row-reverse;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+            font-size: 18px;
+            font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+            justify-content: center;
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .contact-section {
+            display: flex;
+            align-items: center;
+            padding: 50px;
+            max-width: 1200px;
+            width: 100%;
+            background-image: url("https://ccreadysites.cyberchimps.com/nature-leaf/wp-content/uploads/sites/199/2022/05/nature-leaf-contact-info-bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            margin: 20px 0;
+            border-radius: 15px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .contact-container {
+            flex: 1;
+            padding: 20px;
+            font-size: 18px;
+            font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+            background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better readability */
+            border-radius: 15px;
+        }
+
+        .footer {
+            background-color: rgb(72, 103, 54);
+            color: rgb(245, 255, 244);
+            padding: 10px;
+            text-align: center;
+            /* position: fixed; */
+            width: 100%;
+            bottom: 0;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        .footer a {
+            color: rgb(214, 236, 224);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a img {
+            width: 24px;
+            vertical-align: middle;
+        }
+
+        /* CSS Animations */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="brand">LeafLense</div>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/home.html">LeafAnalyzer</a></li>
+            <li><a href="/about.html" style="color: rgb(239, 255, 235);">About</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="section">
+            <div class="text-container">
+                <h2>Your Plant Experts</h2><br><br>
+                <p>
+                    Our mission is to help in identifying plant diseases efficiently. Upload an image of a plant, and our system will analyze it to detect any signs of diseases. Together, let's protect our crops and ensure a healthier harvest!
+                    <br><br>
+            
+                    <b>Why Choose Us?</b><br><br>
+                    - Accuracy: Our system utilizes state-of-the-art machine learning techniques for accurate disease detection.<br>
+                    - User-Friendly: Simple and intuitive interface for seamless user experience.<br>
+                    - Fast and Efficient: Receive results in seconds, allowing for quick decision-making.<br>
+                    <br>
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="https://ccreadysites.cyberchimps.com/nature-leaf/wp-content/uploads/sites/199/2022/05/nature-leaf-about-2.png" alt="Plant Image 1">
+            </div>
+        </div>
+        <div class="section1">
+        </div>
+        <div class="contact-section">
+            <div class="contact-container">
+                <h2>Contact Us</h2><br><br>
+                <p>If you have any questions or need further assistance, please feel free to contact us:</p>
+                <p>Email:<a href="mailto:janhavipatil2004@gmail.com">janhavipatil2004@gmail.com</a></p>
+                <p>Phone: +9404362876</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 LeafLense. All rights reserved.</p>
+        <p>Developed By - Janhavi Rajendra Patil</p>
+        <p>
+            <a href="https://www.instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            <a href="mailto:janhavipatil2004@gmail.com"><img src="https://logodownload.org/wp-content/uploads/2018/03/gmail-logo-16.png" alt="Email"></a>
+        </p>
+    </footer>
+</body>
+
+</html>
+
+
+

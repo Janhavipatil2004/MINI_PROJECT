@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Analyzer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 30px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            background-color: #cccccc;
+        }
+
+        .background {
+            background-image: url("https://ccreadysites.cyberchimps.com/nature-leaf/wp-content/uploads/sites/199/2022/05/nature-leaf-bg-img.jpg");
+            background-color: #fffdfd;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 90%;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            font-size: 17px;
+            /* font-family: 'Times New Roman', Times, serif; */
+            font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+            background-color: transparent;
+            color: rgb(49, 78, 50);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            flex: 1;
+            max-width: 30%;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-width: 300px;
+        }
+
+        .box1:hover,
+        .box2:hover,
+        .box3:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .box1 h5,
+        .box3 h5 {
+            margin-bottom: 15px;
+        }
+
+        .box1 p,
+        .box3 ol {
+            text-align: justify;
+        }
+
+        .box2 form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box2 input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        .box2 img {
+            margin-bottom: 10px;
+            background-color: transparent;
+        }
+
+        nav {
+            background-color: rgb(72, 103, 54);
+            padding: 0.1px; 
+            color: rgb(245, 255, 244);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .brand {
+            margin-left: 15px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            margin-right: 15px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: rgb(214, 236, 224);
+            text-decoration: none;
+        }
+
+
+/* <button class="button-33" role="button">Button 33</button> */
+
+/* CSS */
+.button-33 {
+  background-color: #215b36;
+  border-radius: 100px;
+  box-shadow: rgba(104, 195, 139, 0.2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: rgb(211, 239, 211);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+    
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="brand">LeafLense</div>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/home.html">LeafAnalyzer</a></li>
+            <li> <a href="/about.html" style="color: white;">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="background">
+        <div class="container">
+            <div class="box1">
+                <p> <h5><b>Why is it necessary to detect disease in plants?</b></h5>
+                Plant diseases affect the growth of their respective species. In addition, some research gaps are
+                    identified from which to obtain greater transparency for detecting diseases in plants, even
+                    before their symptoms appear clearly.
+                    Diagnosis is one of the most important aspects of a plant pathologist's training. Without proper
+                    identification of the disease and the disease-causing agent, disease control measures can be a
+                    waste of time and money and can lead to further plant losses. Proper disease diagnosis is
+                    necessary.
+                </p>
+            </div>
+            <div class="box2">
+                <img src="https://ccreadysites.cyberchimps.com/nature-leaf/wp-content/uploads/sites/199/2022/05/nature-leaf-home-02.png" height="250" alt="plant" width="200">
+                <form action="/predict" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" accept="image/*" >
+                    <input type="submit" value="Predict" class="button-33">
+                </form>
+            </div>
+            <div class="box3">
+                <ol>   <h5><b>Prevent Plant Disease: Follow these steps:</b></h5>
+                
+                    <li>Follow Good Sanitation Practices.</li><br>
+                    <li>Fertilize to Keep Your Plants Healthy.</li><br>
+                    <li>Inspect Plants for Diseases Before You Bring Them Home.</li><br>
+                    <li>Allow the Soil to Warm Before Planting.</li><br>
+                    <li>Ensure a Healthy Vegetable Garden By Rotating Crops.</li><br>
+                    <li>Provide Good Air Circulation</li><br>
+                    <li>Remove Diseased Stems and Foliage</li><br>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
