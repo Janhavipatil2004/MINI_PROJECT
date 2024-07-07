@@ -8,6 +8,8 @@ Dataset link - https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-data
 If you Want to download Our trained model
 Follow the link - https://drive.google.com/drive/folders/1HP3E-91Oo7LC2K3GQ5N3_NpSXwQNnVhz?usp=sharing
 
+Deployed APP Link - https://piyush-ten.vercel.app/index.html
+
 Project Output
 ![Screenshot 2024-07-05 235918](https://github.com/Janhavipatil2004/MINI_PROJECT/assets/92740176/c8312434-22db-4e56-81ea-f790d37a9a1f)
 ![Screenshot 2024-07-05 235932](https://github.com/Janhavipatil2004/MINI_PROJECT/assets/92740176/b06795fa-8d4a-4307-a30f-74a980632464)
